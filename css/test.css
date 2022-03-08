@@ -1,0 +1,151 @@
+body {
+  margin-top: 70px; }
+
+section {
+  text-align: center; }
+  section form p {
+    text-align: left;
+    max-width: 80%;
+    margin: 4px auto; }
+  section p {
+    border: none;
+    max-width: 80%;
+    margin: auto; }
+  section button {
+    border: none;
+    background: dodgerblue;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px; }
+
+#starting {
+  display: none; }
+
+.slideshow-container {
+  position: relative;
+  background: #eee;
+  min-height: 200px;
+  height: auto;
+  padding: 20px; }
+  .slideshow-container .mySlides {
+    display: none;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    height: auto; }
+    .slideshow-container .mySlides div {
+      text-align: center;
+      margin: auto;
+      display: block; }
+      .slideshow-container .mySlides div .escribir {
+        cursor: text;
+        width: auto;
+        min-width: 100px;
+        background: white;
+        color: dodgerblue;
+        font-weight: bold; }
+  .slideshow-container strong {
+    display: block;
+    color: dodgerblue;
+    font-size: 15px; }
+  .slideshow-container p {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 3px;
+    border: 1px solid grey;
+    width: 100%; }
+
+.active {
+  background: dodgerblue;
+  color: white; }
+
+.completa {
+  color: black;
+  background: #eee;
+  font-weight: bold; }
+  .completa span {
+    border: none;
+    border-bottom: 2px solid blue;
+    display: inline-block;
+    margin: auto;
+    min-width: 30px;
+    color: blue;
+    padding: 0;
+    font-weight: bold;
+    border-radius: 3px 3px 0 0; }
+    .completa span:hover {
+      background: white; }
+
+#btnNext,
+#btnFinish,
+.btnNext,
+.btnCheck,
+#btnRenew,
+#btnResult,
+.mySlides div button {
+  cursor: pointer;
+  border: solid 1px dodgerblue;
+  outline: none;
+  background-color: #ddd;
+  color: dodgerblue;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin: auto;
+  font-size: 20px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  height: 50px;
+  line-height: 35px; }
+  #btnNext:hover,
+  #btnFinish:hover,
+  .btnNext:hover,
+  .btnCheck:hover,
+  #btnRenew:hover,
+  #btnResult:hover,
+  .mySlides div button:hover {
+    opacity: .8;
+    background: dodgerblue;
+    color: white; }
+
+.divresults,
+#divresults {
+  width: 100%;
+  margin: auto;
+  display: none; }
+
+meter {
+  width: 100%;
+  height: 15px;
+  margin: 5px auto; }
+
+details {
+  display: block;
+  text-align: right; }
+
+details cite {
+  color: blue; }
+
+details i {
+  text-align: justify; }
+
+.dragAndDrop {
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  background: white;
+  padding: 10px; }
+  .dragAndDrop span {
+    display: inline-block;
+    border-radius: 2px;
+    color: black;
+    background: #eee;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 2px;
+    font-weight: bold; }
+    .dragAndDrop span:hover {
+      color: blue;
+      border-color: red; }

@@ -1,0 +1,202 @@
+.public-chat #chatvista {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  max-height: 77vh;
+  padding: 15px;
+  background-color: #d2d2d4;
+  overflow-y: scroll;
+  margin-right: 10px; }
+  .public-chat #chatvista .fecha {
+    text-align: center; }
+    .public-chat #chatvista .fecha span {
+      text-align: center;
+      color: #eee;
+      background-color: #aaa;
+      padding: 3px 10px;
+      border-radius: 5px;
+      font-size: 12px; }
+  .public-chat #chatvista .sms {
+    margin: 5px 0; }
+    .public-chat #chatvista .sms .subclear,
+    .public-chat #chatvista .sms .subdark {
+      padding: 5px 10px;
+      border-radius: 15px; }
+      .public-chat #chatvista .sms .subclear i,
+      .public-chat #chatvista .sms .subclear span,
+      .public-chat #chatvista .sms .subdark i,
+      .public-chat #chatvista .sms .subdark span {
+        font-size: 10px;
+        color: lightslategray; }
+      .public-chat #chatvista .sms .subclear .time-left,
+      .public-chat #chatvista .sms .subdark .time-left {
+        padding-right: 50px;
+        float: left; }
+      .public-chat #chatvista .sms .subclear .time-right,
+      .public-chat #chatvista .sms .subdark .time-right {
+        padding-left: 50px;
+        float: right; }
+      .public-chat #chatvista .sms .subclear .eye,
+      .public-chat #chatvista .sms .subdark .eye {
+        padding-left: 5px; }
+      .public-chat #chatvista .sms .subclear .icon-clip,
+      .public-chat #chatvista .sms .subdark .icon-clip {
+        cursor: pointer;
+        font-size: 15px;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+        .public-chat #chatvista .sms .subclear .icon-clip:hover,
+        .public-chat #chatvista .sms .subdark .icon-clip:hover {
+          color: blue; }
+      .public-chat #chatvista .sms .subclear img,
+      .public-chat #chatvista .sms .subclear font,
+      .public-chat #chatvista .sms .subdark img,
+      .public-chat #chatvista .sms .subdark font {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid #eee; }
+      .public-chat #chatvista .sms .subclear font,
+      .public-chat #chatvista .sms .subdark font {
+        font-size: 12px;
+        background: black;
+        color: #bbb;
+        text-align: center; }
+      .public-chat #chatvista .sms .subclear .replay,
+      .public-chat #chatvista .sms .subdark .replay {
+        margin: 10px;
+        padding: 3px;
+        background: #ddd;
+        font-size: 10px;
+        text-align: left;
+        border-radius: 5px; }
+        .public-chat #chatvista .sms .subclear .replay .icon-reply,
+        .public-chat #chatvista .sms .subdark .replay .icon-reply {
+          position: absolute;
+          right: 20px;
+          top: 40px; }
+        .public-chat #chatvista .sms .subclear .replay a,
+        .public-chat #chatvista .sms .subdark .replay a {
+          text-decoration: none; }
+  .public-chat #chatvista .dark {
+    padding-left: 10%;
+    text-align: right; }
+    .public-chat #chatvista .dark .subdark {
+      display: inline-block;
+      background: #aaa;
+      border-top-right-radius: 0;
+      color: white; }
+      .public-chat #chatvista .dark .subdark i,
+      .public-chat #chatvista .dark .subdark span {
+        color: #ddd; }
+      .public-chat #chatvista .dark .subdark .icon-trash {
+        padding: 5px;
+        cursor: pointer; }
+        .public-chat #chatvista .dark .subdark .icon-trash:hover {
+          color: red; }
+  .public-chat #chatvista .clear {
+    text-align: left;
+    padding-right: 10%; }
+    .public-chat #chatvista .clear .subclear {
+      display: inline-block;
+      background: white;
+      border-top-left-radius: 0; }
+      .public-chat #chatvista .clear .subclear i,
+      .public-chat #chatvista .clear .subclear span {
+        color: #aaa; }
+  .public-chat #chatvista::-webkit-scrollbar {
+    display: none;
+    /* Ocultar scroll */ }
+
+.public-chat button.icon-down {
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 135px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center; }
+  .public-chat button.icon-down:hover {
+    color: dodgerblue;
+    width: 25px;
+    height: 25px;
+    line-height: 30px;
+    font-size: 1.2em; }
+
+.public-chat form {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eee; }
+  .public-chat form .hide,
+  .public-chat form .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .public-chat form .hide {
+    display: none;
+    margin: 10px;
+    margin-bottom: 0; }
+    .public-chat form .hide span,
+    .public-chat form .hide textarea {
+      background: none;
+      color: gray;
+      border: none;
+      outline: none; }
+    .public-chat form .hide span {
+      cursor: pointer;
+      position: absolute;
+      right: 5px;
+      padding: 5px; }
+      .public-chat form .hide span:hover {
+        color: red; }
+    .public-chat form .hide textarea {
+      width: 100%;
+      padding: 5px;
+      font-size: 10px; }
+  .public-chat form .show {
+    background: white;
+    border-radius: 20px;
+    border: 2px solid dodgerblue;
+    overflow: hidden; }
+    .public-chat form .show input {
+      display: none; }
+    .public-chat form .show textarea,
+    .public-chat form .show button {
+      border: none;
+      outline: none; }
+    .public-chat form .show textarea {
+      width: 100%;
+      padding: 5px 10px;
+      border-top-left-radius: 2px; }
+    .public-chat form .show button {
+      width: 15%;
+      font-size: 1.2em;
+      padding-top: 8px;
+      cursor: pointer;
+      border-left: 1px solid dodgerblue; }
+
+@media screen and (max-width: 700px) {
+  .public-chat #chatvista {
+    width: 100%;
+    height: 80vh; }
+  .public-chat form {
+    position: fixed;
+    bottom: 50px;
+    width: 100%; }
+  #version {
+    display: none; } }

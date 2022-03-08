@@ -1,0 +1,269 @@
+.row .left {
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  overflow: auto;
+  height: 85vh;
+  padding: 5px 5%;
+  padding-top: 50px; }
+  .row .left .search {
+    width: 89%;
+    max-width: 1200px;
+    position: fixed;
+    top: 40px;
+    text-align: center;
+    background-color: #ccc;
+    padding: 10px; }
+    .row .left .search input {
+      width: 250px;
+      font-size: 16px;
+      padding: 5px;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      border-radius: 15px; }
+      .row .left .search input:focus {
+        border: 2px solid dodgerblue; }
+  .row .left .subleft p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 1px 0;
+    border-bottom: 0.5px solid #aaa; }
+    .row .left .subleft p a {
+      width: 100%;
+      padding: 5px;
+      text-decoration: none; }
+      .row .left .subleft p a:hover {
+        background-color: #ddd; }
+    .row .left .subleft p img,
+    .row .left .subleft p font {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer; }
+    .row .left .subleft p font {
+      width: 40px;
+      background: black;
+      color: #fff;
+      text-align: center;
+      line-height: 30px; }
+    .row .left .subleft p span {
+      display: block;
+      text-align: center;
+      width: 40px;
+      line-height: 35px; }
+      .row .left .subleft p span:hover {
+        cursor: pointer;
+        background-color: #ddd;
+        color: red; }
+  .row .left::-webkit-scrollbar {
+    display: none;
+    /* Ocultar scroll */ }
+
+.row .right {
+  width: 100%;
+  height: 74vh;
+  padding: 5px;
+  display: none; }
+  .row .right .perfil {
+    background: dodgerblue;
+    overflow: hidden;
+    border: 1px solid gray;
+    color: white; }
+    .row .right .perfil button {
+      padding: 3px 15px;
+      border: none;
+      height: 25px;
+      line-height: 25px;
+      color: dodgerblue;
+      outline: none;
+      cursor: pointer; }
+  .row .right #chatvista {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #d2d2d4;
+    overflow-y: scroll;
+    margin-right: 10px; }
+    .row .right #chatvista .fecha {
+      text-align: center; }
+      .row .right #chatvista .fecha span {
+        text-align: center;
+        color: #eee;
+        background-color: #aaa;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 12px; }
+    .row .right #chatvista .sms {
+      margin: 5px 0; }
+      .row .right #chatvista .sms .subclear,
+      .row .right #chatvista .sms .subdark {
+        padding: 5px 10px;
+        border-radius: 15px; }
+        .row .right #chatvista .sms .subclear i,
+        .row .right #chatvista .sms .subclear span,
+        .row .right #chatvista .sms .subdark i,
+        .row .right #chatvista .sms .subdark span {
+          font-size: 10px;
+          color: lightslategray; }
+        .row .right #chatvista .sms .subclear .time-left,
+        .row .right #chatvista .sms .subdark .time-left {
+          padding-right: 50px;
+          float: left; }
+        .row .right #chatvista .sms .subclear .time-right,
+        .row .right #chatvista .sms .subdark .time-right {
+          padding-left: 50px;
+          float: right; }
+        .row .right #chatvista .sms .subclear .eye,
+        .row .right #chatvista .sms .subdark .eye {
+          padding-left: 5px; }
+        .row .right #chatvista .sms .subclear .icon-clip,
+        .row .right #chatvista .sms .subdark .icon-clip {
+          cursor: pointer;
+          font-size: 15px;
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s; }
+          .row .right #chatvista .sms .subclear .icon-clip:hover,
+          .row .right #chatvista .sms .subdark .icon-clip:hover {
+            color: blue; }
+        .row .right #chatvista .sms .subclear img,
+        .row .right #chatvista .sms .subclear font,
+        .row .right #chatvista .sms .subdark img,
+        .row .right #chatvista .sms .subdark font {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          display: inline-block;
+          border: 1px solid #eee; }
+        .row .right #chatvista .sms .subclear font,
+        .row .right #chatvista .sms .subdark font {
+          font-size: 12px;
+          background: black;
+          color: #bbb;
+          text-align: center; }
+        .row .right #chatvista .sms .subclear .replay,
+        .row .right #chatvista .sms .subdark .replay {
+          margin: 10px;
+          padding: 3px;
+          background: #ddd;
+          font-size: 10px;
+          text-align: left;
+          border-radius: 5px; }
+          .row .right #chatvista .sms .subclear .replay .icon-reply,
+          .row .right #chatvista .sms .subdark .replay .icon-reply {
+            position: absolute;
+            right: 20px;
+            top: 40px; }
+          .row .right #chatvista .sms .subclear .replay a,
+          .row .right #chatvista .sms .subdark .replay a {
+            text-decoration: none; }
+    .row .right #chatvista .dark {
+      padding-left: 10%;
+      text-align: right; }
+      .row .right #chatvista .dark .subdark {
+        display: inline-block;
+        background: #aaa;
+        border-top-right-radius: 0;
+        color: white; }
+        .row .right #chatvista .dark .subdark i,
+        .row .right #chatvista .dark .subdark span {
+          color: #ddd; }
+        .row .right #chatvista .dark .subdark .icon-trash {
+          padding: 5px;
+          cursor: pointer; }
+          .row .right #chatvista .dark .subdark .icon-trash:hover {
+            color: red; }
+    .row .right #chatvista .clear {
+      text-align: left;
+      padding-right: 10%; }
+      .row .right #chatvista .clear .subclear {
+        display: inline-block;
+        background: white;
+        border-top-left-radius: 0; }
+        .row .right #chatvista .clear .subclear i,
+        .row .right #chatvista .clear .subclear span {
+          color: #aaa; }
+    .row .right #chatvista::-webkit-scrollbar {
+      display: none;
+      /* Ocultar scroll */ }
+  .row .right button.icon-down {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 120px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center; }
+    .row .right button.icon-down:hover {
+      color: dodgerblue;
+      width: 25px;
+      height: 25px;
+      line-height: 30px;
+      font-size: 1.2em; }
+  .row .right form {
+    position: fixed;
+    bottom: 50px;
+    width: 98%;
+    display: -ms-grid;
+    display: grid;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #eee; }
+    .row .right form .hide,
+    .row .right form .show {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .row .right form .hide {
+      display: none;
+      margin: 10px;
+      margin-bottom: 0; }
+      .row .right form .hide span,
+      .row .right form .hide textarea {
+        background: none;
+        color: blue;
+        border: none;
+        outline: none; }
+      .row .right form .hide span {
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        padding: 5px; }
+        .row .right form .hide span:hover {
+          color: red; }
+      .row .right form .hide textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 10px; }
+    .row .right form .show {
+      background: white;
+      border-radius: 20px;
+      border: 2px solid dodgerblue;
+      overflow: hidden; }
+      .row .right form .show input {
+        display: none; }
+      .row .right form .show textarea,
+      .row .right form .show button {
+        border: none;
+        outline: none; }
+      .row .right form .show textarea {
+        width: 100%;
+        padding: 5px 10px;
+        border-top-left-radius: 2px; }
+      .row .right form .show button {
+        width: 15%;
+        font-size: 1.2em;
+        padding-top: 8px;
+        cursor: pointer;
+        border-left: 1px solid dodgerblue; }

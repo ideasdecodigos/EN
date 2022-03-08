@@ -1,0 +1,205 @@
+.divbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .divbtn .btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 1.5em;
+    line-height: 50%;
+    background: dodgerblue; }
+    .divbtn .btn:active {
+      background: #aaa; }
+    .divbtn .btn:hover {
+      opacity: .6; }
+
+.active {
+  background: dodgerblue;
+  color: white;
+  min-height: 20px; }
+
+.divtab {
+  display: none;
+  padding: 20px 5px;
+  border-top: none;
+  margin-left: 52px;
+  /*DESPLIEGA LOS FORMULARIOS EN LA VENTANA PERFIL*/ }
+  .divtab .font {
+    margin: 5px auto;
+    width: 300px;
+    max-width: 90%;
+    color: dodgerblue;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .divtab .font:hover > span {
+      color: red; }
+    .divtab .font:hover {
+      background-color: #ddd;
+      color: blue; }
+    .divtab .font span {
+      padding: 0 10px;
+      color: darkorange; }
+  .divtab h2 {
+    text-align: center;
+    margin-bottom: 0; }
+  .divtab form {
+    margin: auto;
+    width: 300px;
+    display: -ms-grid;
+    display: grid;
+    max-width: 90%; }
+    .divtab form input,
+    .divtab form textarea,
+    .divtab form select,
+    .divtab form label,
+    .divtab form button,
+    .divtab form radio {
+      margin: 5px auto;
+      padding: 5px;
+      width: 100%; }
+    .divtab form button {
+      padding: 10px;
+      background-color: dodgerblue;
+      color: white;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid gray;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .divtab form button:hover {
+        opacity: .6;
+        color: black; }
+  .divtab table {
+    margin: auto;
+    background-color: #fff;
+    width: 100%; }
+    .divtab table th {
+      background-color: black;
+      color: dodgerblue;
+      padding: 5px; }
+      .divtab table th span {
+        cursor: pointer;
+        padding: 3px 10px 0 10px;
+        background: dodgerblue;
+        border-radius: 2px;
+        color: black; }
+        .divtab table th span:hover {
+          background: red; }
+    .divtab table td {
+      max-width: 100%;
+      padding: 0 2%; }
+      .divtab table td span,
+      .divtab table td i {
+        display: block;
+        cursor: pointer;
+        padding: 10px 2px;
+        width: 100%; }
+        .divtab table td span font,
+        .divtab table td i font {
+          font-weight: bold; }
+    .divtab table tr {
+      background: #ddd; }
+    .divtab table tr:nth-child(even) {
+      background: #eee; }
+    .divtab table tr td input, .divtab table tr td button {
+      width: 100%;
+      border: none;
+      padding: 10px; }
+    .divtab table tr td button {
+      cursor: pointer; }
+      .divtab table tr td button:hover {
+        color: red; }
+
+.divperfil .imgloaded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .divperfil .imgloaded .img {
+    background: black;
+    color: dodgerblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .divperfil .imgloaded .img img,
+    .divperfil .imgloaded .img font {
+      display: block;
+      font-size: 1.8em;
+      text-align: center;
+      font-weight: bold;
+      line-height: 40px;
+      width: 40px;
+      height: 40px; }
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  width: 50px;
+  height: 400px;
+  float: left;
+  margin: 0px;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  border: 0.5px solid #555;
+  background: #aaa; }
+
+.divRandom > span, a {
+  text-decoration: none;
+  margin-right: 5px;
+  cursor: pointer;
+  text-shadow: 1px 1px  2px black,-1px -1px 2px black;
+  font-size: 15px;
+  color: #fff; }
+  .divRandom > span:hover, a:hover {
+    color: #ddd; }
+
+.temas .divRandom {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 13px; }
+
+/* REPUTACION*/
+.row1 {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  /* Clear floats after the columns */ }
+  .row1 .column1 {
+    width: 100%;
+    /* Style the counter cards */ }
+    .row1 .column1 .card1 {
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px 5px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      margin: 3px; }
+      .row1 .column1 .card1 h3 {
+        color: dodgerblue; }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Responsive columns */
+@media screen and (max-width: 400px) {
+  .row1 {
+    width: 100%;
+    display: -ms-grid;
+    display: grid; } }

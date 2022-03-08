@@ -1,0 +1,95 @@
+.tema {
+  padding: 10px; }
+
+#formOpinar {
+  padding: 10px 0; }
+  #formOpinar label {
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+    color: red;
+    text-align: center; }
+  #formOpinar textarea {
+    width: 100%;
+    padding: 5px; }
+  #formOpinar button,
+  #formOpinar input,
+  #formOpinar #txtreplay {
+    background: none;
+    border: none;
+    outline: none;
+    float: right;
+    color: blue;
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 1.2em; }
+  #formOpinar button[type='reset'] {
+    display: none;
+    float: none; }
+  #formOpinar #txtreplay {
+    font-size: 10px;
+    cursor: auto; }
+
+.fecha {
+  clear: both;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  color: gray; }
+
+.sms {
+  background: #ddd;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  padding-bottom: 20px;
+  position: relative; }
+  .sms .foto img,
+  .sms .foto font {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #eee;
+    float: right; }
+  .sms .foto font {
+    line-height: 23px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background: black;
+    color: #fff;
+    text-align: center; }
+  .sms .foto a {
+    text-decoration: none; }
+  .sms .replay {
+    margin: 10px;
+    padding: 10px;
+    background: #aaa;
+    font-size: 12px; }
+    .sms .replay .icon-reply {
+      position: absolute;
+      right: 20px;
+      top: 40px; }
+    .sms .replay a {
+      text-decoration: none; }
+  .sms .time-right {
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    font-size: 12px; }
+  .sms .time-left {
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    font-size: 12px; }
+  .sms .right {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1em; }
+    .sms .right:hover {
+      color: red; }
+
+.dark {
+  background: #aaa;
+  color: white; }
+  .dark .replay {
+    background: #ddd; }

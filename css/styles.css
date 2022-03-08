@@ -1,0 +1,158 @@
+.active {
+  background: dodgerblue;
+  color: white;
+  min-height: 20px; }
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .controls .range {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    padding: 5px; }
+  .controls select {
+    padding: 5px 0; }
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .buttons button {
+    width: 100%;
+    padding: 10px 0;
+    border: solid 1px gray;
+    outline: none;
+    text-align: center; }
+
+.container {
+  padding: 20px;
+  margin: auto; }
+  .container .contents p {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 10px; }
+    .container .contents p iframe {
+      max-width: 100%;
+      min-height: 200px; }
+  .container .contents button {
+    color: dodgerblue;
+    cursor: pointer;
+    padding: 5px; }
+  .container .contents .divtitle {
+    position: relative;
+    background: #333;
+    text-align: center;
+    color: white;
+    padding: 10px 3%; }
+    .container .contents .divtitle p {
+      font-size: 13px; }
+    .container .contents .divtitle #icontitle {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: dodgerblue;
+      padding: 5px 20px;
+      cursor: pointer;
+      z-index: 2; }
+    .container .contents .divtitle #submenu {
+      width: 120px;
+      display: -ms-grid;
+      display: grid;
+      position: absolute;
+      text-align: left;
+      background: inherit;
+      top: 30px;
+      left: 0;
+      padding: 10px; }
+      .container .contents .divtitle #submenu label, .container .contents .divtitle #submenu input[type='range'] {
+        width: 100%;
+        cursor: pointer; }
+  .container .contents table {
+    margin: auto;
+    background-color: #fff;
+    width: 100%; }
+    .container .contents table th {
+      background-color: black;
+      color: dodgerblue;
+      padding: 5px; }
+      .container .contents table th span {
+        cursor: pointer;
+        padding: 3px 10px 0 10px;
+        background: dodgerblue;
+        border-radius: 2px;
+        color: black; }
+        .container .contents table th span:hover {
+          background: red; }
+    .container .contents table td {
+      max-width: 100%;
+      padding: 5px 2%; }
+      .container .contents table td span {
+        color: red;
+        cursor: pointer;
+        padding: 10px 2px;
+        width: 100%; }
+        .container .contents table td span:nth-child(2) {
+          font-size: 14px; }
+        .container .contents table td span:nth-child(3) {
+          font-size: 12px; }
+      .container .contents table td font {
+        text-transform: capitalize; }
+    .container .contents table tr {
+      background: #ddd; }
+    .container .contents table tr:nth-child(even) {
+      background: #eee; }
+    .container .contents table tr td input {
+      width: 100%; }
+    .container .contents table tfoot tr td {
+      text-align: center;
+      padding: 10px 0;
+      background: rgba(158, 210, 249, 0.453); }
+      .container .contents table tfoot tr td a {
+        font-weight: bold;
+        text-decoration: none;
+        color: red; }
+
+.another {
+  background: #eee;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 250px;
+  margin: 5px auto;
+  -webkit-box-shadow: 2px 2px 5px #666;
+  box-shadow: 2px 2px 5px #666; }
+  .another a {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    background: #ddd;
+    border-radius: 3px;
+    color: dodgerblue;
+    margin-top: 5px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .another a:hover {
+      color: white;
+      background: dodgerblue; }
+
+@media screen and (max-width: 700px) {
+  .access {
+    display: -ms-grid;
+    display: grid; }
+  .container {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .divtab .resultado div {
+    display: block;
+    width: 80%; } }
+
+@media screen and (max-width: 700px) {
+  .controls {
+    display: -ms-grid;
+    display: grid; } }

@@ -1,0 +1,96 @@
+h2 {
+  text-align: center; }
+
+.accordion {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  padding: 5px 3%;
+  border: none;
+  border: 1px solid #666;
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+.active,
+.accordion:hover {
+  background-color: #ccc; }
+
+.panel {
+  padding: 0 2%;
+  display: none; }
+  .panel ul {
+    padding-left: 30px; }
+  .panel button {
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 10px 0 0; }
+
+.container .body {
+  padding: 0 0 0 10px;
+  margin: 5px;
+  display: none;
+  background: #ddd; }
+  .container .body .enVerb {
+    color: blue;
+    font-weight: bold; }
+    .container .body .enVerb button {
+      float: right;
+      border: none;
+      background: none;
+      outline: none;
+      color: red;
+      padding: 3px  5px;
+      cursor: pointer; }
+  .container .body .desVerb {
+    color: gray;
+    font-style: italic;
+    font-size: 12px; }
+  .container .body ul, .container .body ol {
+    margin-left: 10px;
+    padding-left: 10px; }
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  float: right; }
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */ }
+
+.divbtn {
+  text-align: center; }
+  .divbtn button {
+    cursor: pointer;
+    padding: 5%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    margin: 5px; }
+
+.divtab {
+  display: none; }
+
+.select {
+  background: dodgerblue;
+  color: white; }
+
+@media screen and (max-width: 700px) {
+  .panel {
+    font-size: 14px; } }
+
+@media screen and (max-width: 500px) {
+  .panel {
+    font-size: 12px; } }

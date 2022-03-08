@@ -1,0 +1,81 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #000;
+  height: 70vh;
+  min-height: 400px;
+  color: aliceblue; }
+  .slideshow-container h1 {
+    font-size: 1.5em; }
+  .slideshow-container .icon-configs {
+    padding: 10px 20px;
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 5; }
+  .slideshow-container .configs {
+    top: 40px;
+    background-color: black;
+    display: -ms-grid;
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+    position: absolute;
+    z-index: 5; }
+    .slideshow-container .configs label {
+      cursor: pointer; }
+    .slideshow-container .configs .grid {
+      display: -ms-grid;
+      display: grid; }
+  .slideshow-container .mySlides {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    width: 100%;
+    padding: 0 20px; }
+    .slideshow-container .mySlides meter {
+      width: 100%; }
+    .slideshow-container .mySlides h2 {
+      color: dodgerblue;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+    .slideshow-container .mySlides p {
+      color: darkgoldenrod; }
+
+p.pWrite {
+  min-height: 20px; }
+
+#buttons {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  /* Position the "prev button" to the left */
+  /* Position the "next button" to the right */ }
+  #buttons a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 20px;
+    color: darkgoldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 50px; }
+    #buttons a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: red; }
+  #buttons .prev {
+    border-radius: 10px 0 0 10px; }
+  #buttons .next {
+    border-radius: 0 10px 10px 0; }

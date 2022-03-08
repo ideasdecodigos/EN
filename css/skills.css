@@ -1,0 +1,14 @@
+.skills {
+  text-align: center;
+  display: block;
+  padding: 50px 0;
+  background: #fff; }
+  .skills div {
+    display: inline-block;
+    margin: auto;
+    padding: 10px; }
+    .skills div span {
+      display: block;
+      width: 100%;
+      color: dodgerblue;
+      font-weight: bold; }

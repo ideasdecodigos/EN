@@ -1,0 +1,161 @@
+#main {
+  min-height: 300px;
+  padding-top: 150px; }
+  #main #img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto; }
+
+.container .divbtn {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container .divbtn button {
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    border: none;
+    outline: none; }
+
+.container .fixed {
+  display: block;
+  position: fixed;
+  top: 83px;
+  width: 100%;
+  max-width: 1200px;
+  background: #ddd;
+  padding: 10px 5%;
+  z-index: 2; }
+  .container .fixed button {
+    display: block;
+    margin: 5px auto;
+    padding: 1% 2%;
+    background-color: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.5em; }
+    .container .fixed button:hover {
+      color: #ddd; }
+
+form div {
+  padding: 5px 0; }
+
+.body {
+  margin-top: 50px;
+  padding: 0 5%; }
+
+#formMatch {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 5px; }
+  #formMatch select,
+  #formMatch button {
+    height: 40px;
+    max-width: 70px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+#listas .info {
+  display: -ms-grid;
+  display: grid;
+  text-align: center; }
+  #listas .info img {
+    margin: auto; }
+
+#listas #star,
+#listas #en,
+#listas #es {
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 10px;
+  min-width: 150px;
+  padding: 10px; }
+  #listas #star li,
+  #listas #en li,
+  #listas #es li {
+    padding: 3px;
+    margin: 5px;
+    margin-left: 15px;
+    border: 1px solid black;
+    background: white; }
+
+#listas #respuestas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px; }
+  #listas #respuestas ol {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  #listas #respuestas #es {
+    background-image: url("../src/img/draganddrop.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+#listas #star {
+  margin: auto;
+  min-height: 50px;
+  background-image: url("../src/img/arrastrarysoltar.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #listas #star li {
+    color: black;
+    list-style: none;
+    display: inline-block; }
+
+#listas #en {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto; }
+
+.tooltip {
+  position: relative;
+  color: dodgerblue;
+  font-weight: bold;
+  cursor: pointer; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* posision*/
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* fade in*/
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    .tooltip .tooltiptext:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }

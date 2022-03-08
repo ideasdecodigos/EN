@@ -1,0 +1,138 @@
+.divbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .divbtn .btn {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    line-height: 50%;
+    color: dodgerblue; }
+    .divbtn .btn:active {
+      background: #aaa; }
+    .divbtn .btn:hover {
+      opacity: .6; }
+
+#divanswers input {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px; }
+
+#divanswers section {
+  border-bottom: 1px solid black;
+  background: #ccc;
+  padding: 5px;
+  min-height: 100px; }
+  #divanswers section:hover {
+    cursor: pointer;
+    opacity: 0.5; }
+  #divanswers section .icon-trash {
+    float: right;
+    padding: 5px;
+    cursor: pointer; }
+    #divanswers section .icon-trash:hover {
+      color: red; }
+  #divanswers section .time-right {
+    float: right;
+    font-size: 12px; }
+  #divanswers section .img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: dodgerblue;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5em;
+    font-weight: bold; }
+
+#divquestion {
+  display: none; }
+
+.divtab {
+  margin-top: 10px;
+  padding: 0 50px; }
+  .divtab form {
+    margin-bottom: 50px; }
+    .divtab form button {
+      border: none;
+      outline: none;
+      color: blue;
+      float: right;
+      font-size: 1.5em;
+      padding: 10px 5px;
+      background: none;
+      cursor: pointer; }
+
+@media screen and (max-width: 400px) {
+  .divtab {
+    padding: 0 10px; } }
+
+/* Slideshow container */
+.slideshow {
+  position: relative;
+  background: black;
+  min-height: 135px;
+  color: white;
+  margin: 10px 0; }
+  .slideshow h1 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.3em;
+    color: dodgerblue; }
+  .slideshow .mySlides {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 30px; }
+    .slideshow .mySlides:hover {
+      cursor: pointer;
+      opacity: 0.5; }
+    .slideshow .mySlides i {
+      font-size: 11px;
+      position: absolute;
+      bottom: 2px;
+      right: 10px;
+      color: red; }
+    .slideshow .mySlides .author {
+      font-style: italic;
+      color: darkorange; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 5px;
+  color: #555;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(205, 205, 205, 0.3);
+    color: white; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
